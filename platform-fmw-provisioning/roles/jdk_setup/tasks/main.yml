@@ -3,7 +3,7 @@
   unarchive:
     remote_src: yes
     dest: "{{ jdk_home }}"
-    src: "/tmp/{{ jdk_file_name }}"
+    src: "/{{ installer_location }}/{{ jdk_file_name }}"
     owner: "{{ oam_admin_user }}"
     group: "{{ oracle_group }}"
 
